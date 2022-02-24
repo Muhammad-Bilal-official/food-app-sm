@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&family=Source+Code+Pro:ital@1&family=Ubuntu&display=swap');
+/* Modal CSS */
+
+.modal-content{
+    border-radius: 20px;
+    background-color: rgb(207, 203, 203);
+}
+.modal-title{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#orderCategoryModalLabel{
+    border: 2px solid burlywood;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(orange,yellow);
+    color: red;
+}
