@@ -1,63 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
 
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/all.css" />
     <title>Food Application</title>
-  </head>
-  <body>
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="orderCategoryModalLabel">Welcome to our food App </h5>
-            <h2 class="modal-title pl-3">Please Select Your Order Category</h2>
+
+</head>
+
+<body>
+    <!-- Modal Start-->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderCategoryModalLabel">
+                        Welcome to our food App
+                    </h5>
+                    <h2 class="modal-title pl-3">Please Select Your Order Category</h2>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">
+                        Home Dilivery
+                    </button>
+                    <button type="button" class="btn btn-success btn-block" data-dismiss="modal">
+                        Take Way
+                    </button>
+                    <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">
+                        Table
+                    </button>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
         </div>
-        <div class="modal-body">
-            <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">Home Dilivery</button>
-            <button type="button" class="btn btn-success btn-block" data-dismiss="modal">Take Way</button>
-            <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Table</button>
-        </div>
-        <div class="modal-footer">
-        </div>
-      </div>
     </div>
-  </div>
+    <!-- Modal End -->
+    <section class="main-container card shadow-lg">
+        <div class="container card-body">
+            <div class="row nav-bar-row">
+                <div class="col-md-8 col-lg-10">
+                    <div class="row text-center">
+                        <!-- Navbar Start-->
+                        <nav class="navbar navbar-light bg-light">
+                            <a class="navbar-brand m-auto"><strong style="font-size: 2rem;">Manu</strong>
+                                <span class="text-muted" style="font-size: 1.5rem;">Category</span></a>
+                            <form class="form-inline m-auto">
+                                <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                        placeholder="Username" />
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-search"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                            </svg></div>
+                                    </div>
+                            </form>
+                        </nav>
+                        <!-- Navbar End  -->
+                    </div>
+                    <div class="row mt-3" id="menu-pages">
+                        <!-- Menu List Start  -->
+                        <div id="carouselExampleControls" class="carousel slide" data-touch="false" data-interval="false" data-ride="carousel">
+                            <div class="carousel-inner ">
+                                <div class="carousel-item active">
+                                    <div class="row ml-5 pl-5 mr-5 pr-5">
+                                        <div class="col-6 col-md-6 col-lg-3 mb-3">
+                                            <a href="#">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body text-center">
+                                                        <i class="fa-solid fa-burger"></i>
+                                                        <h5 class="text-dark pt-2">Burgers</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-6 col-lg-3">
+                                            <a href="#">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body text-center">
+                                                        <i class="fa-solid fa-pizza-slice"></i>
+                                                        <h5 class="text-dark pt-2">Pizza</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-6 col-lg-3">
+                                            <a href="#">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body text-center">
+                                                        <i class="fa-solid fa-ice-cream"></i>
+                                                        <h5 class="text-dark pt-2">Ice Cream</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-md-6 col-lg-3">
+                                            <a href="#">
+                                                <div class="card shadow-sm">
+                                                    <div class="card-body text-center">
+                                                        <i class="fa-solid fa-champagne-glasses img img-fluid"></i>
+                                                        <h5 class="text-dark pt-2">Cold Drinks</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                <div class="row ml-5 pl-5 mr-5 pr-5">
+                                        <div class="row">
+                                            <div class="col-6 col-lg-3 mb-3">
+                                                <a href="#">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body text-center">
+                                                            <i class="fa-solid fa-mug-hot"></i>
+                                                            <h5 class="text-dark pt-2">Hot Drinks</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-lg-3">
+                                                <a href="#">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body text-center">
+                                                            <i class="fa-solid fa-cake-candles"></i>
+                                                            <h5 class="text-dark pt-2">Cakes</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-lg-3 ">
+                                                <a href="#">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body text-center">
+                                                            <i class="fa-solid fa-champagne-glasses"></i>
+                                                            <h5 class="text-dark pt-2">Burgers</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-lg-3 ">
+                                                <a href="#">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-body text-center">
+                                                            <i class="fa-solid fa-champagne-glasses"></i>
+                                                            <h5 class="text-dark pt-2">Burgers</h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-      crossorigin="anonymous"
-    ></script>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true">
+                                </span>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">Category Itoms</div>
+                </div>
+                <div class="col-md-4 col-lg-2">Order</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- temp -->
+    <!-- temp -->
+    <!-- // Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
     <!-- Custom JS  -->
     <script src="./js/index.js"></script>
-  </body>
+</body>
+
 </html>
