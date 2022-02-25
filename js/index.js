@@ -4,7 +4,7 @@
 
 let foodItems = document.getElementById("food-items");
 
-const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+const burgers = `<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -15,7 +15,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -26,7 +26,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -37,7 +37,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -48,7 +48,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -59,7 +59,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -70,7 +70,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -81,7 +81,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -92,7 +92,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -103,7 +103,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+                <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     <div class="card shadow-sm">
                         <div class="card-body text-center">
                             <div class="card-img img-fluid">
@@ -116,7 +116,7 @@ const burgers = `<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
                 </div>
             </div>`;
         
-const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+const pizza = `  <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -127,7 +127,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -138,7 +138,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -149,7 +149,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -160,7 +160,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -171,7 +171,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -182,7 +182,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -193,7 +193,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -204,7 +204,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -215,7 +215,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -227,7 +227,7 @@ const pizza = `  <div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
 </div>
 </div>`;
 const iceCream = `
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -238,7 +238,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -249,7 +249,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -260,7 +260,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -271,7 +271,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -282,7 +282,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -293,7 +293,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -304,7 +304,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -315,7 +315,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">
@@ -326,7 +326,7 @@ const iceCream = `
     </div>
 </div>
 </div>
-<div class="col-10 col-md-6 col-lg-4 pb-3 d-block m-auto">
+<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
         <div class="card-img img-fluid">

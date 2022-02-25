@@ -24,7 +24,7 @@
 <body>
     <!-- Modal Start-->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        aria-labelledby="staticBackdropLabel" aria-hidden="true" id="navbar">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -49,11 +49,15 @@
         </div>
     </div>
     <!-- Modal End -->
-    <section class="main-container card shadow-lg">
+
+
+    <!-- Mian Container Starts -->
+    <section class="main-container card shadow-lg d-block m-auto">
         <div class="container card-body">
-            <div class="row nav-bar-row">
-                <div class="col-md-8 col-lg-10 border-top">
-                    <div class="row text-center">
+            <div class="row" id="top">
+                <div class="col-md-8 col-lg-10 d-block m-auto text-center border-top">
+
+                    <div class="row m-auto nav-bar-row">
                         <!-- Navbar Start-->
                         <nav class="navbar navbar-light bg-light w-100">
                             <a class="navbar-brand m-auto"><strong style="font-size: 2rem;">Manu</strong>
@@ -62,7 +66,7 @@
                                 <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" id="inlineFormInputGroupUsername"
-                                        placeholder="Username" />
+                                        placeholder="Please Search any food Item" />
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                 height="16" fill="currentColor" class="bi bi-search"
@@ -75,15 +79,17 @@
                         </nav>
                         <!-- Navbar End  -->
                     </div>
-                    <div class="row mt-3" id="menu-pages">
+                    <div class="row mt-3 mx-auto" id="menu-bar">
                         <!-- Menu List Start  -->
                         <div id="carouselExampleControls" class="carousel slide m-auto" data-touch="false"
                             data-interval="false" data-ride="carousel">
-                            <div class="carousel-inner ">
+                            <!-- Slides Start Here  -->
+                            <div class="carousel-inner">
+                                <!-- Slide 1 Starts Here  -->
                                 <div class="carousel-item active">
-                                    <div class="row ml-5 pl-5 mr-5 pr-5">
+                                    <div class="row m-auto ml-md-5 pl-md-5 mr-5 pr-5">
                                         <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                            <a href="#" onclick="changeMenuHandler('burger')">
+                                            <a href="#food-items" onclick="changeMenuHandler('burger')">
                                                 <div class="card shadow-sm">
                                                     <div class="card-body text-center">
                                                         <i class="fa-solid fa-burger"></i>
@@ -93,7 +99,7 @@
                                             </a>
                                         </div>
                                         <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                            <a href="#" onclick="changeMenuHandler('pizza')">
+                                            <a href="#food-items" onclick="changeMenuHandler('pizza')">
                                                 <div class="card shadow-sm">
                                                     <div class="card-body text-center">
                                                         <i class="fa-solid fa-pizza-slice"></i>
@@ -103,7 +109,7 @@
                                             </a>
                                         </div>
                                         <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                            <a href="#" onclick="changeMenuHandler('ice-cream')">
+                                            <a href="#food-items" onclick="changeMenuHandler('ice-cream')">
                                                 <div class="card shadow-sm">
                                                     <div class="card-body text-center">
                                                         <i class="fa-solid fa-ice-cream"></i>
@@ -113,7 +119,7 @@
                                             </a>
                                         </div>
                                         <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                            <a href="#">
+                                            <a href="#food-items">
                                                 <div class="card shadow-sm">
                                                     <div class="card-body text-center">
                                                         <i class="fa-solid fa-champagne-glasses img img-fluid"></i>
@@ -124,11 +130,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Slide 1 Ends Here  -->
+
+                                <!-- Slide 2 Starts Here  -->
                                 <div class="carousel-item">
-                                    <div class="row ml-5 pl-5 mr-5 pr-5">
-                                        <div class="row">
+                                    <div class="row m-auto ml-md-5 pl-md-5 mr-5 pr-5">
                                             <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                                <a href="#">
+                                                <a href="#food-items">
                                                     <div class="card shadow-sm">
                                                         <div class="card-body text-center">
                                                             <i class="fa-solid fa-mug-hot"></i>
@@ -138,7 +146,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                                <a href="#">
+                                                <a href="#food-items">
                                                     <div class="card shadow-sm">
                                                         <div class="card-body text-center">
                                                             <i class="fa-solid fa-cake-candles"></i>
@@ -148,7 +156,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                                <a href="#">
+                                                <a href="#food-items">
                                                     <div class="card shadow-sm">
                                                         <div class="card-body text-center">
                                                             <i class="fa-solid fa-champagne-glasses"></i>
@@ -158,7 +166,7 @@
                                                 </a>
                                             </div>
                                             <div class="col-10 col-sm-6 col-lg-3 pb-2 d-block m-auto">
-                                                <a href="#">
+                                                <a href="#food-items">
                                                     <div class="card shadow-sm">
                                                         <div class="card-body text-center">
                                                             <i class="fa-solid fa-champagne-glasses"></i>
@@ -167,12 +175,12 @@
                                                     </div>
                                                 </a>
                                             </div>
-
-                                        </div>
                                     </div>
                                 </div>
-
+                                <!-- Slide 2 Ends Here  -->
                             </div>
+                            <!-- Slides Ends Here  -->
+                            <!-- Carousel Buttons Starts Here  -->
                             <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
                                 data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true">
@@ -184,21 +192,38 @@
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </button>
+                            <!-- Carousel Buttons End Here  -->
                         </div>
+                        <!-- Menu List End  -->
+
                     </div>
                     <div class="order-items-section card m-4 pt-3 px-3">
                         <h1 class="text-center py-2">Order Your Meal</h1>
                         <h3 class="text-center py-1">Click on the item as many time as much items you want to order</h3>
                         <div class="row" id="food-items">
                             <!-- Order Items Start -->
-                          
-                        <!-- Order Items end -->
+
+                            <!-- Order Items end -->
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-2">Order</div>
+                <div class="col-md-4 col-lg-2 border-top">
+                    Order
+                </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- Mian Container Ends -->
+
+
+    <!-- Move Up Button in Small Screen -->
+    <span id="buttonUp">
+        <a href="#top">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </span>
+    <!-- Move Up Button in Small Screen -->
 
     <!-- temp -->
     <!-- temp -->
