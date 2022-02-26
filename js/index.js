@@ -115,7 +115,7 @@ const burgers = `<div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
                     </div>
                 </div>
             </div>`;
-        
+
 const pizza = `  <div class="col-12 col-md-6 col-lg-4 pb-3 d-block m-auto">
 <div class="card shadow-sm">
     <div class="card-body text-center">
@@ -341,7 +341,19 @@ const iceCream = `
 const broast = ``;
 foodItems.innerHTML = burgers;
 function changeMenuHandler(value) {
-    if (value === "burger") foodItems.innerHTML = burgers;
-    else if (value === "pizza") foodItems.innerHTML = pizza;
-    else if (value === "ice-cream") foodItems.innerHTML = iceCream;
+  if (value === "burger") foodItems.innerHTML = burgers;
+  else if (value === "pizza") foodItems.innerHTML = pizza;
+  else if (value === "ice-cream") foodItems.innerHTML = iceCream;
+}
+
+function toggleAddToCartMenu() {
+  document.getElementById("orderList").classList.toggle("d-block");
+}
+function toggleCustomerOrderList() {
+  let orderListItems = document.getElementById("orderListItems");
+  orderListItems.classList.toggle("d-block");
+  let button = document.querySelector("#showOrderListbtn");
+  console.log(button.innerText);
+  if (button.innerText === "Show Your Order") button.innerText = "Hide Your Order";
+  else button.innerText = "Show Your Order";
 }
