@@ -1,6 +1,6 @@
-// $(document).ready(function(){
-//     $('#staticBackdrop').modal('show');
-// })
+$(document).ready(function(){
+    $('#staticBackdrop').modal('show');
+})
 
 let foodItems = document.getElementById("food-items");
 
