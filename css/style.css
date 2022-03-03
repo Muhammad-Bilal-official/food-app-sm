@@ -16,7 +16,9 @@ body {
   border-radius: 20px;
   background-color: white;
 }
-.modal-title {
+.modalTitle {
+  margin-top: 5%;
+  font-weight: bolder;
   font-family: "Ubuntu", sans-serif;
 }
 #orderCategoryModalLabel {
@@ -30,6 +32,11 @@ body {
 }
 
 /* main Container CSS */
+        /* Main Navbar CSS  */
+        #topNav nav a{
+          font-size: 2rem;
+        }
+
 .main-container {
   width: 96vw;
   margin: 5vh auto;
@@ -90,7 +97,7 @@ button.carousel-control-prev,button.carousel-control-next {
     /* position: absolute; */
 }
 #orderListItems{
-    display: none;
+    /* display: none; */
     
 }
 #orderList .card{
@@ -178,12 +185,12 @@ button.carousel-control-prev,button.carousel-control-next {
   color: black;
 }
 
-@media only screen and (max-width: 806px) {
+@media only screen and (max-width: 992px) {
     #orderList{
-        display: none;
-        position: fixed;
-        top: 5vh;
-        right: 12%;
+        /* display: none; */
+        /* position: fixed; */
+        /* top: 5vh; */
+        /* right: 12%; */
         z-index: 10;
         width: 80%;
         height: 70vh;

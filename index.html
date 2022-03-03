@@ -28,19 +28,19 @@
         <div class="modal-dialog modal-dialog-centered " id="main-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="orderCategoryModalLabel">
+                    <h5 class="modal-title modalTitle" id="orderCategoryModalLabel">
                         Welcome to our food App
                     </h5>
-                    <h2 class="modal-title pl-3">Please Select Your Order Category</h2>
+                    <h2 class="modal-title pl-3 modalTitle">Please Select Your Order Category</h2>
                 </div>
                 <div class="modal-body">
-                    <button type="button" class="btn btn-primary btn-block" data-dismiss="modal">
+                    <button type="button" class="btn btn-outline-danger btn-block" data-dismiss="modal">
                         Home Dilivery
                     </button>
-                    <button type="button" class="btn btn-success btn-block" data-dismiss="modal">
+                    <button type="button" class="btn btn-outline-danger btn-block" data-dismiss="modal">
                         Take Way
                     </button>
-                    <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">
+                    <button type="button" class="btn btn-outline-danger btn-block" data-dismiss="modal">
                         Table
                     </button>
                 </div>
@@ -51,11 +51,31 @@
     <!-- Modal End -->
 
 
+
     <!-- Mian Container Starts -->
     <section class="main-container card shadow-lg d-block m-auto mt-5 pt-5">
         <div class="container card-body">
-            <div class="row" id="top">
-                <div class="col-md-8 col-lg-10 d-block m-auto text-center">
+            <div class="row" id="topNav">
+                <!-- Navbar Start  -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light w-100 my-2">
+                    <a class="navbar-brand" href="#">Company Name</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-lg-none" id="navbarSupportedContentDiv">
+
+                        </div>
+
+                    </div>
+                </nav>
+                <!-- NAvbar Ends  -->
+            </div>
+            <div class="row">
+                <div class="col-md-11 col-lg-8 d-block m-auto text-center">
                     <div class="row m-auto nav-bar-row">
                         <!-- Navbar Start-->
                         <nav class="navbar navbar-light bg-light w-100">
@@ -119,11 +139,11 @@
                                             </a>
                                         </div>
                                         <div class="col-6 col-lg-3 d-block p-0 pb-2 px-1 m-auto">
-                                            <a href="#food-items">
+                                            <a href="#food-items" onclick="changeMenuHandler('broast')">
                                                 <div class="card shadow-sm">
                                                     <div class="card-body text-center">
-                                                        <i class="fa-solid fa-champagne-glasses img img-fluid"></i>
-                                                        <h5 class="text-dark pt-2">Cold Drinks</h5>
+                                                        <i class="fa-solid fa-drumstick-bite img img-fluid"></i>
+                                                        <h5 class="text-dark pt-2">Broast</h5>
                                                     </div>
                                                 </div>
                                             </a>
@@ -200,19 +220,20 @@
 
                 </div>
 
-                <div class="col-md-4 col-lg-2 text-center" id="orderList">
-                    <h1>Rs. 0</h1>
+                <div class="d-none d-lg-block col-lg-4 text-center" id="orderList">
+                    <!-- <h1>Rs. 0</h1>
                     <div id="addToCartButton" class="mb-4">
                         <button class="btn btn-block btn-danger">
                             Add to Cart &nbsp;&nbsp;
                             <i class="fa-solid fa-cart-shopping"></i> <br>
                         </button>
                     </div>
-                    <button class="btn btn-block btn-outline-success mt-2" id="showOrderListbtn" onclick="toggleCustomerOrderList()">
+                    <button class="btn btn-block btn-outline-success mt-2" id="showOrderListbtn"
+                        onclick="toggleCustomerOrderList()">
                         Show Your Order
-                    </button>
+                    </button> -->
                     <!-- Order List Starts Here  -->
-                    <div id="orderListItems">
+                    <!-- <div id="orderListItems">
                         <div class="card shadow-lg border bg-light my-2">
                             <div class="orderListProduct p-0 m-0 pt-2">
                                 <img src="./img/burgers/b3.jpg" alt="">
@@ -223,9 +244,7 @@
                             <h6 class="productName">Burger 1</h6>
                             <div id="orderButtons">
                                 <i class="fa-solid fa-plus text-success mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-minus text-dark mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-trash-can text-danger mx-3"></i>
                             </div>
                         </div>
@@ -239,9 +258,7 @@
                             <h6 class="productName">Pizza 5</h6>
                             <div id="orderButtons">
                                 <i class="fa-solid fa-plus text-success mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-minus text-dark mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-trash-can text-danger mx-3"></i>
                             </div>
                         </div>
@@ -255,9 +272,7 @@
                             <h6 class="productName">Broast 2</h6>
                             <div id="orderButtons">
                                 <i class="fa-solid fa-plus text-success mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-minus text-dark mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-trash-can text-danger mx-3"></i>
                             </div>
                         </div>
@@ -271,9 +286,7 @@
                             <h6 class="productName">Burger 1</h6>
                             <div id="orderButtons">
                                 <i class="fa-solid fa-plus text-success mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-minus text-dark mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-trash-can text-danger mx-3"></i>
                             </div>
                         </div>
@@ -287,9 +300,7 @@
                             <h6 class="productName">Pizza 5</h6>
                             <div id="orderButtons">
                                 <i class="fa-solid fa-plus text-success mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-minus text-dark mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-trash-can text-danger mx-3"></i>
                             </div>
                         </div>
@@ -303,17 +314,14 @@
                             <h6 class="productName">Broast 2</h6>
                             <div id="orderButtons">
                                 <i class="fa-solid fa-plus text-success mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-minus text-dark mx-3"></i>
-                                <!-- <br> -->
                                 <i class="fa-solid fa-trash-can text-danger mx-3"></i>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Order List ends Here  -->
                 </div>
             </div>
-
 
 
             <div class="order-items-section card px-1 my-4">
@@ -333,18 +341,19 @@
 
     <!-- Move Up Button in Small Screen -->
     <span id="buttonUp">
-        <a href="#top">
+        <a href="#topNav">
             <i class="fa-solid fa-circle-up"></i>
         </a>
     </span>
     <!-- Move Up Button in Small Screen -->
     <!-- Add to Cart Small Screen Button  -->
-    <span id="addToCartSmallScreenbtn">
+    <!-- <span id="addToCartSmallScreenbtn">
         <i class="fa-solid fa-cart-shopping" onclick="toggleAddToCartMenu()"></i>
-    </span>
+    </span> -->
     <!-- Add to Cart Small Screen Button  -->
 
     <!-- temp -->
+ 
     <!-- temp -->
     <!-- // Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
